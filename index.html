@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'hanken': ['HankenGrotesk', 'serif'],
+        },
+        extend: {
+        }
+      }
+    }
+  </script>
+
+<style type="text/tailwindcss">
+  @layer base {
+    @font face {
+    font-family: 'HankenGrotesk';
+    font-style: normal;
+    font-weight: 500, 700, 800;
+    font-display: swap;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format('truetype');
+    }
+  }
+</style>
+
+
+</head>
+<body class="md:flex md:items-center md:justify-center min-h-screen bg-[#ffffff] md:bg-[hsl(221_100%_96%)]">
+  <main class="flex flex-col bg-[#ffffff] md:flex-row items-center max-w-lg  md:rounded-xl overflow-hidden">
+
+    <div class="w-full md:w-1/2 bg-gradient-to-b from-[hsl(252_100%_67%)] to-[hsl(241_81%_54%)] p-10 flex flex-col justify-center items-center rounded-b-3xl md:rounded-xl overflow-hidden">
+      <h2 class="text-center text-[hsl(241_100%_89%)] font-semibold mb-4 text-2xl md:text-lg">Your Result</h2>
+
+      <div class="w-32 h-32 bg-gradient-to-b from-[hsl(256_72%_46%)] to-[hsl(241_81%_54%))] rounded-full grid place-content-center mb-4">
+      <p class="text-center text-5xl text-white font-bold mb-2">76</p>
+      <p class="text-center text-xs text-[hsl(241_100%_89%)]">of 100</p>
+      </div>
+    
+      <h1 class="text-3xl md:text-xl text-white font-semibold mb-2">Great</h1>
+      <p class="text-center text-lg md:text-xs text-[hsl(241_100%_89%)]">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+
+    <div class="w-full h-full md:w-1/2 p-10 md:p-4">
+      <h2 class="font-bold text-[hsl(224_30%_27%)] mb-2 text-xl md:text-lg">Summary</h2>
+      <div class="flex justify-between bg-red-100 px-6 py-4 md:px-3 md:py-2 w-full rounded-md mb-2">
+
+      <div>
+      <img class="inline text-[hsl(0_100%_67%)] " src="assets/images/icon-reaction.svg" alt="reaction icon"> 
+      <p class="inline text-[hsl(0_100%_67%)] font-bold text-md md:text-sm">Reaction</p>
+      </div>
+
+      <div>
+      <span class="font-bold text-[hsl(224_30%_27%)]">80</span> <span class="text-gray-400 font-semibold">/ 100</span></div>
+      </div>
+
+      <div class="flex justify-between bg-yellow-100 px-6 py-4 md:px-3 md:py-2 w-full rounded-md mb-2">
+
+      <div>
+      <img class="inline" src="assets/images/icon-memory.svg" alt="memory icon">
+      <p class="inline text-[hsl(39_100%_56%)] font-bold text-md md:text-sm">Memory</p></div>
+
+      <div>
+      <span class="font-bold text-[hsl(224_30%_27%)]">92</span> <span class="text-gray-400 font-semibold">/ 100</span>
+      </div>
+
+      </div>
+
+      <div class="flex justify-between bg-teal-100 px-6 py-4 md:px-3 md:py-2 w-full rounded-md mb-2">
+      <div>
+      <img class="inline" src="assets/images/icon-verbal.svg" alt="verbal icon">
+      <p class="inline text-[hsl(166_100%_37%)] font-bold text-md md:text-sm">Verbal</p>
+      </div>
+      <div>
+      <span class="font-bold text-[hsl(224_30%_27%)]">61</span> <span class="text-[hsl(252_100%_67%)] font-semibold"></span><span class="text-gray-400 font-semibold">/ 100</span></div>
+    
+      </div>
+
+      <div class="flex justify-between bg-blue-100 px-6 py-4 md:px-3 md:py-2 w-full rounded-md mb-2">
+      <div>
+      <img class="inline" src="assets/images/icon-visual.svg" alt="visual icon">
+      <p class="inline text-[hsl(234_85%_45%)] font-bold text-md md:text-sm">Visual</p></div>
+      <div>
+      <span class="font-bold text-[hsl(224_30%_27%)]">72</span> <span class="text-gray-400 font-semibold">/ 100</span>
+      </div>
+      </div> 
+
+      <button class="text-lg md:text-sm bg-[hsl(224_30%_27%)] text-white w-full mt-4 py-4 md:py-2 rounded-3xl hover:bg-gradient-to-b from-[hsl(252_100%_67%)] to-[hsl(241_81%_54%)]">Continue</button>
+    </div>
+
+</main> 
+  
+</body>
+</html>
